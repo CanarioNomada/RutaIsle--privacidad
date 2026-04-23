@@ -1,158 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Política de privacidad - RutaIsleña</title>
-  <meta name="description" content="Política de privacidad de la app RutaIsleña (CarsLovers/RutaIsleña)." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de privacidad – RutaIsleña</title>
   <style>
-    :root{
-      --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#f43f5e;
-      --max:920px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; background:linear-gradient(180deg,#0b1220,#0f172a 40%,#0b1220);
-      color:var(--text); font-family:Inter,Segoe UI,Roboto,Arial,sans-serif; line-height:1.65;
-    }
-    .wrap{max-width:var(--max); margin:32px auto; padding:0 16px}
-    .card{
-      background:rgba(17,24,39,.92); border:1px solid rgba(244,63,94,.35);
-      border-radius:16px; padding:24px;
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-    h1{margin:0 0 8px; font-size:1.8rem}
-    .meta{color:var(--muted); margin:0 0 20px}
-    h2{
-      margin:26px 0 8px; font-size:1.1rem; color:#fecdd3;
-      border-left:3px solid var(--accent); padding-left:10px;
-    }
-    p{margin:0 0 10px}
-    ul{margin:8px 0 12px 20px}
-    a{color:#93c5fd}
-    .footer{margin-top:26px; color:var(--muted); font-size:.95rem}
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; color: #b91c1c; }
+    .muted { color: #555; font-size: 0.95rem; }
+    p { margin: 0.65rem 0; }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <article class="card">
-      <h1>Política de privacidad - RutaIsleña</h1>
-      <p class="meta">Vigente desde abril de 2026</p>
+  <h1>Política de privacidad</h1>
+  <p class="muted">Vigente desde abril de 2026. Este documento describe el tratamiento de datos de la aplicación publicada en Google Play.</p>
 
-      <p>
-        RutaIsleña (“la app”) te permite llevar el registro de tu vehículo:
-        kilometraje, repostajes, mantenimiento, gastos y viajes.
-        Esta política explica qué datos pueden tratarse, con qué finalidad y qué servicios de terceros intervienen.
-      </p>
-      <p>
-        Si no aceptas esta política, no uses la aplicación.
-        Puedes borrar datos y desinstalarla desde Ajustes de Android.
-      </p>
+  <p>RutaIsleña («la aplicación») sirve para llevar el registro de tu vehículo: kilometraje, repostajes, mantenimiento, gastos y viajes. Aquí se indica qué información puede tratarse, con qué fines y qué servicios de terceros intervienen. Si no aceptas esta política, no uses la aplicación; puedes borrar datos y desinstalar desde Ajustes del sistema (Aplicaciones → RutaIsleña).</p>
 
-      <h2>1. Responsable y contacto</h2>
-      <p>
-        Responsable del tratamiento: titular del proyecto RutaIsleña.
-        Contacto para privacidad y soporte:
-        <a href="mailto:asierdev.soporte@gmail.com">asierdev.soporte@gmail.com</a>
-      </p>
+  <h2>Responsable y contacto</h2>
+  <p>Responsable del tratamiento: el titular del proyecto RutaIsleña. Para consultas de privacidad o para ejercer tus derechos: asierdev.soporte@gmail.com.</p>
 
-      <h2>2. Datos almacenados en tu dispositivo</h2>
-      <p>
-        Vehículos, repostajes, servicios, gastos, historial de viajes, preferencias y archivos locales
-        (por ejemplo imagen de portada) se almacenan en tu dispositivo.
-        No se venden a terceros ni se usan para publicidad de terceros.
-      </p>
+  <h2>Datos en tu dispositivo</h2>
+  <p>Vehículos, repostajes, servicios, gastos, historial de viajes, preferencias y archivos que guardes (por ejemplo imagen de portada) se almacenan en tu teléfono mediante una base de datos local. No vendemos esos contenidos ni los usamos para publicidad de terceros; permanecen bajo tu control salvo lo indicado en las secciones sobre cuenta, Firebase o conexión a internet.</p>
 
-      <h2>3. Cuenta e inicio de sesión</h2>
-      <p>
-        Si usas registro por correo/contraseña o “Continuar con Google”,
-        la autenticación puede gestionarse mediante Google Firebase Authentication.
-        Según el método, pueden tratarse identificador de usuario, correo, nombre o foto de perfil.
-      </p>
+  <h2>Copia de seguridad (ZIP y Google Drive)</h2>
+  <p>La app ofrece una copia de seguridad en formato ZIP con tus datos locales y, si existen, las imágenes de portada guardadas en el dispositivo. Puedes guardar esa copia en tu propia cuenta de Google Drive (con tu consentimiento al iniciar sesión con Google y conceder el acceso limitado drive.file) o conservar el archivo donde tú elijas. La restauración desde un ZIP sustituye los datos locales de la app en ese dispositivo. Esas operaciones no sustituyen la copia de seguridad del sistema de Android ni la nube del fabricante; si desinstalas la aplicación sin haber exportado una copia, los datos almacenados solo en el teléfono dentro de RutaIsleña pueden eliminarse de forma irreversible.</p>
 
-      <h2>4. Firebase, notificaciones y estabilidad</h2>
-      <p>La app puede usar:</p>
-      <ul>
-        <li><strong>Firebase Cloud Messaging (FCM)</strong> para notificaciones remotas.</li>
-        <li><strong>Cloud Firestore</strong> para asociar token de notificaciones al usuario autenticado.</li>
-        <li><strong>Firebase Crashlytics</strong> para diagnóstico técnico de errores.</li>
-      </ul>
-      <p>
-        Crashlytics puede recoger datos técnicos como tipo de fallo, modelo de dispositivo y versión de la app.
-      </p>
+  <h2>Cuenta e inicio de sesión</h2>
+  <p>Si creas cuenta con correo y contraseña o usas «Continuar con Google», la autenticación puede gestionarse mediante Google Firebase Authentication. Según el método pueden tratarse identificador de usuario, correo, nombre o foto de perfil según lo proporcione el proveedor de identidad. Consulta también la política de privacidad de Google aplicable a esos servicios.</p>
+  <p>Para cuentas con correo y contraseña, el restablecimiento o cambio de contraseña se realiza mediante los mecanismos que ofrece Firebase en el flujo de inicio de sesión (por ejemplo «¿Olvidaste tu contraseña?»); la pantalla de perfil no solicita una contraseña nueva. Al cerrar sesión desde Ajustes se muestra una confirmación en el dispositivo antes de cerrar la sesión en Firebase y limpiar preferencias locales de usuario.</p>
 
-      <h2>5. Ubicación (incluyendo segundo plano)</h2>
-      <p>
-        La ubicación aproximada/precisa y, cuando aplique, en segundo plano,
-        se utiliza para registrar trayectos cuando tú inicias un viaje y el modo de registro lo requiere.
-        Sin ese permiso, esas funciones no estarán disponibles.
-      </p>
+  <h2>Firebase, notificaciones y estabilidad</h2>
+  <p>La app puede utilizar Google Firebase (Cloud Messaging, Cloud Firestore y Crashlytics). Con sesión iniciada, un token de notificaciones (FCM) puede almacenarse asociado a tu usuario en Firestore para enviar avisos relacionados con el servicio. Si se produce un error grave, Crashlytics puede enviar datos técnicos (tipo de fallo, modelo de dispositivo, versión de la app) para diagnosticar y mejorar la estabilidad.</p>
 
-      <h2>6. Bluetooth</h2>
-      <p>
-        Puede solicitarse acceso Bluetooth para funciones relacionadas con vehículo o trayectos
-        (por ejemplo detección de conexión a dispositivo).
-      </p>
+  <h2>Ubicación (incluido segundo plano)</h2>
+  <p>La ubicación aproximada y precisa, y en segundo plano cuando el sistema lo permite, se usa para registrar rutas cuando tú inicias un viaje y el modo de registro lo requiere (por ejemplo GPS), normalmente con un servicio en primer plano visible. Sin permiso de ubicación esas funciones no funcionan. Puedes revocarlo en cualquier momento en Ajustes de Android.</p>
 
-      <h2>7. Mapas (Google Maps Platform)</h2>
-      <p>
-        Si se muestran mapas o datos cartográficos, se cargan mediante servicios de Google Maps Platform,
-        sujetos a sus propias condiciones y política de privacidad.
-      </p>
+  <h2>Bluetooth</h2>
+  <p>Puede solicitarse acceso a Bluetooth para funciones relacionadas con el vehículo o el registro de trayectos (por ejemplo detección de conexión con un dispositivo). Solo se utiliza en la medida necesaria cuando activas esas funciones o el flujo de la app lo requiere.</p>
+  <p>En el modo de viaje que combina Bluetooth con GPS, Bluetooth puede usarse para detectar la conexión o desconexión con el dispositivo que elijas en la configuración, de modo que la app sepa cuándo iniciar o considerar finalizar un trayecto; esos eventos se procesan principalmente en tu dispositivo.</p>
 
-      <h2>8. Conexiones a internet y precios de carburante</h2>
-      <p>
-        Para consultar estaciones y precios, la app puede conectarse a API públicas oficiales
-        (por ejemplo MITECO en España). Estas consultas pueden implicar registros técnicos estándar de tráfico web.
-      </p>
+  <h2>Mapas (Google)</h2>
+  <p>Si se muestran mapas o datos cartográficos, pueden cargarse a través de Google Maps Platform. Google puede tratar datos técnicos asociados a esas solicitudes según sus condiciones y su política de privacidad.</p>
 
-      <h2>9. Notificaciones</h2>
-      <p>
-        La app puede generar recordatorios locales (mantenimiento, repostaje, fin de viaje)
-        y notificaciones remotas (si las habilitas y con permiso del sistema).
-      </p>
+  <h2>Internet y precios oficiales de carburante</h2>
+  <p>Para consultar estaciones y precios, la aplicación puede conectarse al API REST público del Ministerio para la Transición Ecológica y el Reto Demográfico de España (MITECO). Esas peticiones no envían datos personales introducidos por ti de forma explícita; el proveedor del servicio público puede registrar datos técnicos habituales del tráfico web en sus servidores.</p>
 
-      <h2>10. Base legal</h2>
-      <p>
-        El tratamiento se basa en la ejecución del servicio de la app,
-        tu consentimiento para permisos opcionales
-        (ubicación, notificaciones, Bluetooth, galería/cámara cuando corresponda),
-        y en interés legítimo para seguridad/mejora técnica (p. ej., fallos).
-      </p>
+  <h2>Notificaciones</h2>
+  <p>Los recordatorios locales (mantenimiento, repostaje, fin de viaje) se programan en el dispositivo según tus ajustes. Las notificaciones remotas pueden requerir permiso explícito en Android 13 o superior y depender de FCM.</p>
 
-      <h2>11. Conservación de datos</h2>
-      <p>
-        Los datos locales se conservan hasta que los elimines en la app o desinstales.
-        Los datos asociados a servicios de Google/Firebase dependen de sus políticas y configuración de cuenta.
-      </p>
+  <h2>Base legal (RGPD / LOPDGDD)</h2>
+  <p>El tratamiento se basa en la ejecución de la relación de uso de la aplicación, en tu consentimiento para permisos opcionales (ubicación, notificaciones, Bluetooth, galería o cámara cuando elijas añadir imágenes) y, cuando corresponda, en el interés legítimo en la seguridad y mejora del servicio (por ejemplo informes de error razonables).</p>
 
-      <h2>12. Derechos</h2>
-      <p>
-        Puedes ejercer derechos de acceso, rectificación, oposición, limitación y supresión cuando la ley lo permita.
-        También puedes retirar permisos desde Ajustes de Android.
-      </p>
+  <h2>Conservación</h2>
+  <p>Los datos locales se conservan hasta que los borres en la app o desinstales RutaIsleña; al desinstalar sin haber usado la función de copia de seguridad de la app o la copia del sistema, lo guardado solo en la base de datos local puede perderse. Una copia ZIP o un archivo en tu Drive permanece bajo tu control en la medida en que tú lo conserves. Los datos vinculados a tu cuenta en Google/Firebase se rigen por las políticas de Google y la configuración de tu cuenta. Para solicitudes razonables de información o borrado escribe a asierdev.soporte@gmail.com.</p>
 
-      <h2>13. Transferencias internacionales</h2>
-      <p>
-        Proveedores como Google pueden tratar datos fuera de tu país o del EEE
-        con las garantías que indiquen en su documentación vigente.
-      </p>
+  <h2>Tus derechos</h2>
+  <p>Puedes acceder, rectificar, limitar u oponerte al tratamiento cuando la ley lo permita, y solicitar la supresión de datos personales asociados a tu cuenta donde proceda. Los permisos del sistema puedes retirarlos en Ajustes → Aplicaciones → RutaIsleña. Si resides en el Espacio Económico Europeo y no quedas satisfecho con la respuesta, puedes reclamar ante una autoridad de protección de datos.</p>
 
-      <h2>14. Menores</h2>
-      <p>
-        La app no está dirigida a menores de 16 años y no se recaban datos de menores de forma consciente.
-      </p>
+  <h2>Transferencias internacionales</h2>
+  <p>Proveedores como Google pueden tratar datos en la UE/EEE o en terceros países con garantías reconocidas (por ejemplo cláusulas contractuales tipo), según la información que publiquen en cada momento.</p>
 
-      <h2>15. Cambios de esta política</h2>
-      <p>
-        Esta política puede actualizarse por cambios legales o funcionales.
-        La versión vigente será siempre la publicada en esta URL.
-      </p>
+  <h2>Menores</h2>
+  <p>La aplicación no está dirigida a menores de 16 años. No recopilamos a sabiendas datos de menores; si eres tutor y detectas un supuesto, contáctanos en el correo de soporte.</p>
 
-      <p class="footer">
-        Última actualización: abril 2026.
-      </p>
-    </article>
-  </main>
+  <h2>Cambios</h2>
+  <p>Podremos actualizar esta política por cambios legales o en las funciones. La versión vigente se mostrará desde Ajustes → Política de privacidad. El uso continuado tras la actualización implica que la has revisado, salvo que la ley exija un procedimiento distinto.</p>
 </body>
 </html>
